@@ -144,7 +144,7 @@ class TestVoid(unittest.TestCase):
         self.assertEqual(repr(Void), 'Void')
 
     def test_format(self):
-        self.assertEqual(format(Void, 'fdfdsfdsfs'), 'Void')
+        self.assertEqual(format(Void, '^6'), ' Void ')
 
     def test_context(self):
         init_value = 'some value'

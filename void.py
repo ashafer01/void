@@ -63,7 +63,7 @@ class VoidType(object):
         return not other
 
     def __ne__(self, other):
-        return bool(other) is True
+        return bool(other)
 
     # be falsey for equality, and 0 for strictly numeric comparisons
 
@@ -143,7 +143,7 @@ class VoidType(object):
         return 'Void'
 
     def __format__(self, format_spec):
-        return 'Void'
+        return format('Void', format_spec)
 
     # exit context managers immediately and successfully (see VoidContext def)
 
